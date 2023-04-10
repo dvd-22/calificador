@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background: #f4f4f4;
+}
+
+h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: 700;
+	color: black;
+}
+
+h2 {
+	font-size: 1rem;
+	text-align: center;
+	font-weight: 700;
+	color: rgb(136, 136, 136);
+}
+
+.parent,
+#datos {
+	height: 100vh;
+	width: 100vw;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+#datos {
+	height: 50vh;
+	gap: 1rem;
+}
+
+.puntaje {
+	font-size: 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.botones {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.boton {
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 5px;
+	background: #333;
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+	text-decoration: none;
+	transition: 100ms all;
+}
+
+.boton:hover {
+	filter: brightness(0.8);
+}
+
+#sumar {
+	background: #117c00;
+}
+
+#restar {
+	background: #aa0000;
+}
+
+#regresar {
+	transform: translateY(-2rem);
+	font-size: 1rem;
+	background: #000;
+}
+
+#terminar {
+	font-size: 1rem;
+	background: #ffffff;
+	border: solid black 2px;
+	color: #000;
+}
+
+#result,
+#percent,
+#message {
+	font-size: 2rem;
+}
+
+#result,
+#percent {
+	background-color: none;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.resultado #titulo {
+	font-weight: 700;
+}
