@@ -15,24 +15,26 @@
         <form id="datos" class="center">
             <h3>Ingresa los datos del examen</h3>
             <div id="titulo-parent" class="center">
-                <label for="titulo">Título del examen <i>(Opcional): </i></label>
+                <label for="titulo">Título del examen:&ThickSpace;</label>
                 <input name="titulo" id="titulo" type="text" placeholder="Ej: Examen del IPN">
             </div>
 
             <div id="nombre-parent" class="center">
-                <label for="nombre">Ingresa tu nombre: </label>
+                <label for="nombre">Ingresa tu nombre<span class="req">*</span>:&ThickSpace;</label>
                 <input name="nombre" id="nombre" type="text" placeholder="Ej: David" required>
             </div>
 
             <div id="max-buenas-parent" class="center">
-                <label for="max-buenas">Número máximo de respuestas correctas: </label>
+                <label for="max-buenas">Número máximo de respuestas correctas<span
+                        class="req">*</span>:&ThickSpace;</label>
                 <input name="max-buenas" id="max-buenas" type="number" min="0" placeholder="Ej: 120" required>
             </div>
 
             <button type="button" id="submit" class="boton">Empezar</button>
-        </form>
+    </div>
+    </form>
 
-        <script src="./form.js"></script>
+    <script src="./form.js"></script>
 </body>
 
 </html>

@@ -21,6 +21,8 @@ MAX_BUENAS.addEventListener("change", function () {
 
 SUBMIT.addEventListener("click", function () {
 	if (nombreUsuario === "" || maxBuenas === 0) {
+		NOMBRE.style.borderColor = "red";
+		MAX_BUENAS.style.borderColor = "red";
 		alert("Rellena los campos requeridos");
 	} else {
 		localStorage.setItem("nombre", nombreUsuario);

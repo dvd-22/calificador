@@ -47,6 +47,23 @@ h2 {
 	gap: 1rem;
 }
 
+.req {
+	color: red;
+}
+
+.req:hover::after {
+	position: absolute;
+	content: "Requerido";
+	font-size: 0.8rem;
+	border: solid black 1px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	color: rgb(255, 255, 255);
+	padding: 0 0.5rem 0 0.5rem;
+	margin: 0 0 3rem 0.5rem;
+	background-color: rgb(255, 0, 0);
+}
+
 .puntaje {
 	font-size: 8rem;
 	width: 100%;
