@@ -28,6 +28,7 @@ SUBMIT.addEventListener("click", function () {
 		localStorage.setItem("nombre", nombreUsuario);
 		localStorage.setItem("titulo", titulo);
 		localStorage.setItem("maxBuenas", maxBuenas);
+		localStorage.setItem("buenas", 0);
 		window.location.href = "./calificador.html";
 	}
 });
