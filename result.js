@@ -15,16 +15,24 @@ titulo.innerHTML = TITLE;
 nombre.innerHTML = NOMBRE;
 percent.innerHTML = `${porcentaje.toFixed(2)}%`;
 
-if (porcentaje >= 85) {
-	percent.style.color = "green";
-	MESSAGE.innerHTML = "¡Felicidades!";
-} else if (porcentaje >= 65) {
-	percent.style.color = "#a99804";
-	MESSAGE.innerHTML = "¡Bien!";
-} else if (porcentaje >= 40) {
-	percent.style.color = "orange";
-	MESSAGE.innerHTML = "¡Puedes mejorar!";
+let msgs = [
+	"¡Uy!",
+	"¡Vaya!",
+	"¡Intenta otra vez!",
+	"¡No te des por vencido!",
+	"¡Tú puedes!",
+	"Sigue practicando!",
+	"¡Bien!",
+	"¡Muy bien!",
+	"¡Excelente!",
+	"¡Felicidades!",
+	"¡Wow!",
+];
+
+MESSAGE.innerHTML = msgs[Math.floor(porcentaje / 10)];
+
+if (porcentaje < 50) {
+	percent.style.color = `rgb(255,${porcentaje * 2.55 * 2},0)`;
 } else {
-	percent.style.color = "red";
-	MESSAGE.innerHTML = "¡Sigue intentando!";
+	percent.style.color = `rgb(${255 - (porcentaje - 50) * 2.55 * 2},255,0)`;
 }
