@@ -24,6 +24,9 @@ SUBMIT.addEventListener("click", function () {
 		NOMBRE.style.borderColor = "red";
 		MAX_BUENAS.style.borderColor = "red";
 		alert("Rellena los campos requeridos");
+	} else if (maxBuenas < 0) {
+		MAX_BUENAS.style.borderColor = "red";
+		alert("El número de preguntas no puede ser negativo");
 	} else {
 		localStorage.setItem("nombre", nombreUsuario);
 		localStorage.setItem("titulo", titulo);
